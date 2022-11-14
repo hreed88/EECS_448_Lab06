@@ -1,0 +1,30 @@
+
+body{
+    background-color: rgb(224, 216, 216);
+}
+
+
+table, th, td{
+    border: solid;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+th{
+    background-color: lightgreen;
+}
+
+td{
+    background-color: powderblue;
+}
+
+.recipt{
+   
+    border: solid;
+}
+
+#shipping{
+    border: 2px solid;
+    margin-right: 90%;
+    padding-left: 1%
+}

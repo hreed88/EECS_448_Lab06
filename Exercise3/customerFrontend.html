@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Shop</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="formChecker.js"></script>
+    </head>
+    <body>
+        <form onsubmit="isValidLogin();" method="POST" id="login">
+        <label for="userName">Username: </label>
+        <input type="text" name="userName" id="userName"><br><br>
+        <label for="passWord">Password</label>
+        <input type="password" name="passWord" id="passWord"><br><br>
+                    
+                       
+        <div id="items">
+                <table>
+                    <tr>
+                        <th align="left">Items</th>
+                        <th align="center">Cost per item</th>
+                        <th align="right">Quantity</th>
+                    </tr>
+                    <tr>
+                        <td align="left">Balloons</td>
+                        <td align="center">$2.00</td>
+                        <td><input type="number" id="Balloons" name="Balloons" value="0" style="text-align: right;"></td>
+                    </tr>
+                    <tr>
+                        <td align="left">Candles</td>
+                        <td align="center">$0.50</td>
+                        <td><input type="number" id="Candles" name="Candles" value="0" style="text-align: right;"></td>
+                    </tr>
+                    <tr>
+                        <td align="left">Presents</td>
+                        <td align="center">$25.00</td>
+                        <td align="right"><input type="number" name="Presents" id="Presents" value="0" style="text-align: right;"></td>
+                    </tr>
+                    
+                </table>
+                <br>
+                <div id="shipping" >
+                    <h3>Shipping</h3>
+                    <label for="ship1">Free 7 day </label>
+                    <input type="radio" id="ship1" name="Shipping" value="0"><br><br>
+                    <label for="ship2">$50.00 Overnight </label>
+                    <input type="radio" id="ship2" name="Shipping" value="50"><br><br> 
+                    <label for="ship3">$5.00 3 day</label>
+                    <input type="radio" id="ship3" name="Shipping" value="5"><br><br>  
+                </div>
+            </div>
+            <br>
+            <input type="submit" >
+        
+    </form >
+    <button id="reset" onclick="resetForm()">Reset</button>
+    <br>
+    <br>
+    <a href=../index.html>Home</a>
+    </body>
+</html>
